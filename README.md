@@ -30,7 +30,8 @@ A RoBERTa model is fine-tuned to classify tweets as human-written or AI-generate
 To train the model, simply run the following command:
 
 ```bash
-python train.py```
+python train.py
+```
 
 
 ## AI-Generated Image: Dataset
@@ -109,3 +110,18 @@ The dataset is organized into monthly folders, each containing chunked CSV files
 - Researchers can use the `content` column to **filter AI-generated vs. non-AI-generated images**.
 - The `image_url` and `tweet_url` allow users to **trace back to the original content** for further analysis.
 
+
+## Citation
+
+If you find this work helpful in your research, please consider citing our paper:
+
+```bibtex
+@misc{chen2025prevalencesharingpatternsspreaders,
+      title={Prevalence, Sharing Patterns, and Spreaders of Multimodal AI-Generated Content on X during the 2024 U.S. Presidential Election}, 
+      author={Zhiyi Chen and Jinyi Ye and Emilio Ferrara and Luca Luceri},
+      year={2025},
+      eprint={2502.11248},
+      archivePrefix={arXiv},
+      primaryClass={cs.SI},
+      url={https://arxiv.org/abs/2502.11248}, 
+}
