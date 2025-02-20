@@ -24,8 +24,8 @@ def load_data(filepath):
     return df
 
 # Load datasets
-train_data = load_data("dataset/train.csv")
-test_data = load_data("dataset/test.csv")
+train_data = load_data("text_dataset/train.csv")
+test_data = load_data("text_dataset/test.csv")
 
 # Initialize and train model
 model = Transformer(train_data, test_data, "FacebookAI/roberta-base")
@@ -37,4 +37,4 @@ print(class_report)
 
 # Save the trained model
 torch.save(model, "roberta_tweet_classification.pth")
-print("Model saved to roberta_tweet_classification.pth.pth")
+print("Model saved to roberta_tweet_classification.pth")
