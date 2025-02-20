@@ -30,7 +30,7 @@ A RoBERTa model is fine-tuned to classify tweets as human-written or AI-generate
 To train the model, simply run the following command:
 
 ```bash
-python train.py
+python train.py```
 
 
 ## AI-Generated Image: Dataset
